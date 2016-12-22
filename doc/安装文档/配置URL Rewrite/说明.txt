@@ -1,0 +1,43 @@
+将动态网页链接映射成静态链接，是针对搜索引擎最稳定的优化方式。使用URL Rewrite功能将使您站点更好的被搜索引擎收录。
+如果启用URL Rewrite功能，需要网站所在服务器支持。
+
+一.在Apache环境下使用URL Rewrite
+二.在IIS环境下使用URL Rewrite
+三.使用.htaccess文件
+
+
+
+一、在Apache环境下使用URL Rewrite：
+==================================================
+如果当前Apache未开启URL Rewrite功能
+A、windows环境：
+直接修改Apache的httpd.conf文件。
+找到
+(Apache 1.x) #LoadModule rewrite_module libexec/mod_rewrite.so
+(Apache 2.x) #LoadModule rewrite_module modules/mod_rewrite.so
+去掉前面的#，如果没找到，请自行添加。
+B、Linux/Unix环境：
+重新编译Apache，在编译参数中增加--enable-rewrite=shared
+
+在相应的虚拟主机配置段中添加以下设置:
+RewriteEngine On
+RewriteRule ^(.*)/show\-([A-Za-z0-9]{40})\.html$ $1/show.php?hash=$2
+RewriteRule ^(.*)/rss(\-([1-9]{1}\d*))?\.xml$ $1/rss.php?page=$3
+RewriteRule ^(.*)/(reseed|commend|today|weekly)\-([1-9]{1}\d*)\.html$ $1/index.php?o=$2&page=$3
+RewriteRule ^(.*)/(team|sort|user)\-([1-9]{1}\d*)\-([1-9]{1}\d*)\.html$ $1/index.php?$2_id=$3&page=$4
+RewriteRule ^(.*)/([1-9]{1}\d*)\.html$ $1/index.php?page=$2
+保存更改，重启Apache服务。
+
+更多相关信息请参考APACHE官方文档
+http://httpd.apache.org/docs/mod/mod_rewrite.html
+http://httpd.apache.org/docs-2.0/mod/mod_rewrite.html
+
+
+二、在IIS环境下使用URL Rewrite：
+详见IIRF目录install.txt
+
+
+三、使用.htaccess文件
+==================================================
+首先需要确定是否支持URL Rewrite以及是否支持对站点目录中.htaccess文件的解析。如果条件满足，只需要在网站根目录放置我们提供的.htaccess文件即可正常使用URL Rewrite。
+如果发布系统不是安装在网站的根目录下，例如是安装在http://www.btmaster.cn/demo，则需要将.htaccess中的RewriteBase /修改为RewriteBase /demo，对.htaccess文件的任何修改均不需要重启Apache服务。

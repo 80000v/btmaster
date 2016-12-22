@@ -1,0 +1,12 @@
+环境需求 MySQL 4.1X 以上
+
+解压win_tracker.zip，将得到的所有文件复制到任意目录(例如:d:\tracker，路径中不能包含有空格。如果是NTFS分区格式，该目录需设置LOCAL_SERVICE执行权限)
+
+编辑 xbt_tracker.conf
+mysql_host = localhost #mysql服务器域名或者ip 本地mysql保持默认
+mysql_user = xbt       #mysql用户名
+mysql_password = pass  #mysql密码
+mysql_database = xbt   #数据库名(BTMaster数据库)
+
+执行安装Install.bat 安装服务并启动
+反安装请执行Unstall.bat

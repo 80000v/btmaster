@@ -1,0 +1,25 @@
+1.解压下载的压缩包文件
+2.配置include/config.default.php文件中的数据库连接相关资料，同时手动创建相同名称的数据库
+3.上传upload目录下所有文件到您的服务器
+
+注意:
+如果主机是Linux/Unix环境，且使用FTP软件上传文件，传送模式请选择二进制
+如果使用的是Linux/Unix系统，可能需要调整以下目录属性：
+    设置 data 目录及其下所有目录和文件属性为777
+如果是windows环境，且分区为NTFS格式，请设置 IUSER_*** 用户对以上目录有读、写、删除和修改的权限
+    设置IUSER_*** 用户对 data 目录及其下所有目录有读、写、删除和修改的权限
+
+
+4.执行安装文件 http://www.domain.com/install/install.php 开始安装
+5.安装结束删除install目录，开始使用发布系统
+
+* 评论如果要显示用户IP归属地，请下载www.cz88.net的IP数据库。将QQWry.Dat文件重命名为wry.dat，上传至include目录。
+
+
+特别提示：
+在修改模板或语言文件时，请不要使用windows自带的记事本，由于模板使用的是UTF-8编码，windows记事本对UTF-8编码支持较差，修改后会造成页面顶部出现一行空白，影响页面布局。推荐给大家一款可以完全取代windows记事本的编辑器EmEditor(http://www.emeditor.com/)，功能强大，资源占用极低。不习惯英文界面的用户，用google可以找到该软件的汉化版本。
+
+
+安全建议：
+网站的管理目录admin可以任意更改名称，为了您的网站安全，建议您修改此目录名。
+通过修改include/config.default.php文件中$CONFIG['dir']['data']的值，您可以将data目录设置到服务器的其它任意地方。当然，您必须同步手动修改原来的data目录。

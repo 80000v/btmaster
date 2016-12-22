@@ -1,0 +1,26 @@
+/**
+ *
+ * Copyright (c) 2011 www.btmaster.cn All rights reserved.
+ * Powered by BTMaster.cn
+ * QQ:1145316697
+ *
+ */
+
+/* user control panel */
+.user_menu{color:#DFE9F0;border:1px solid #FFF;background:#E0F0FF;padding:7px;}
+.user_menu h1{font-size:12px;padding:5px;margin:2px;font-weight:normal;border:1px solid #FFF;background:#6AAAE2;}
+.user_menu a{color:#FFF;}
+
+/*.m_container{position:relative;display:block;background:#6889C5;border-left:190px solid #172E68;}*/
+.m_container{display:block;border-left:190px solid #FFF;}
+.m_inner{display:block;margin-left:-190px;}
+.m_left{float:left;width:180px;left:0;margin-right:10px;}
+.m_right{display:block;overflow:hidden;height:1%;}
+
+.control{}
+.control a{display:block;padding:5px;margin:4px;border:1px solid #CADFE8;background:#EDF6FE;}
+.control a:hover{text-decoration:none;background:#FFF;}
+
+.post .emule div{overflow:hidden;height:1%;width:550px;}
+.post .emule div .left{width:510px;}
+.post .emule div .right{width:40px;text-align:left;}

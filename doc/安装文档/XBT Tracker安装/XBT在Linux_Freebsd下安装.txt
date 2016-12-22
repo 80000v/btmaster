@@ -1,0 +1,29 @@
+环境需求 MySQL 4.1X以上 gcc
+
+需要手动修改make.sh(或make.bsd.sh)，指定mysql_config的路径
+例如：
+mysql安装在/usr/local/mysql，mysql_config的路径为/usr/local/mysql/bin/mysql_config
+打开make.sh，将mysql_config替换为/usr/local/mysql/bin/mysql_config
+
+#tar zxvf xbt_tracker.tar.gz
+#cd xbt_tracker/Tracker
+#chmod 755 make.sh
+#./make.sh(BSD系统请使用make.bsd.sh)
+
+编译成功后目录下生成xbt_tracker
+#cp xbt_tracker.conf.default xbt_tracker.conf
+编辑 xbt_tracker.conf
+mysql_host = localhost #mysql服务器域名或者ip 本地mysql保持默认
+mysql_user = xbt       #mysql用户名
+mysql_password = pass  #mysql密码
+mysql_database = xbt   #数据库名
+
+启动
+#./xbt_tracker
+停止
+#kill `cat xbt_tracker.pid`
+
+自动启动
+编辑/etc/rc.local
+添加一行
+/path/xbt_tracker

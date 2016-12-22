@@ -1,0 +1,24 @@
+/* *********************************
+ * BTMaster 2.x JS调用
+ * 最后修改: 23:09 2008-12-13
+ * Powered by: BTMaster.cn
+ ********************************* */
+
+参数说明：
+sort_id:    调用的分类ID,多个分类请使用1_2_3这样的格式，留空不限制
+team_id:    调用的联盟ID，多个联盟请使用1_2_3这样的格式，留空不限制
+recommend： 调用推荐资源，可选值：0，1。默认值：0
+sname：     是否显示分类名称，可选值：0，1。默认值：0
+postdate：  是否显示发布日期，可选值：0，1。默认值：0
+xbt：       是否显示资源的种子、下载、完成数，可选值：0，1。默认值：0
+order：     排序方式，可选值：1.发布日期,2.提升日期,3.种子数,4.下载数,5.完成数。默认值：1
+length：    标题长度。默认值：50
+num:        调用资源条数。默认值：10
+
+
+注意：
+代码中请保留charset="utf-8"，否则可能会出现乱码。
+可以通过编辑模板js.tpl，实现更加自由的调用风格。
+
+调用示例：
+<script language="JavaScript" charset="utf-8" src="http://www.domain.com/js.php?sort_id=1_2_3&team_id=1_2_3&recommend=0&sname=1&postdate=0&xbt=0&order=1&length=50&num=10"></script>

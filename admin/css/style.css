@@ -1,0 +1,99 @@
+/**
+ *
+ * Copyright (c) 2010 www.btmaster.cn All rights reserved.
+ * Powered by BTMaster.cn
+ * QQ:1145316697
+ *
+ */
+html{scrollbar-arrow-color:#FFF;scrollbar-track-color:#D2EFF9;scrollbar-base-color:#3DC2EC;scrollbar-shadow-color:#3DC2EC;}
+body{color:#444;margin:0 auto;padding:0;background:#E6F3F9;}
+body, p, td, tr, ol, ul{font:12px Tahoma, Verdana,Arial, Sans-Serif, simsun;line-height:120%;}
+img{border:0;}
+input, select, textarea, option, button, optgroup{font:12px Tahoma, Verdana,Arial, Sans-Serif, simsun;vertical-align:middle;}
+a{color:#0278D9;font-weight:normal;text-decoration:none;}
+a:hover{text-decoration:underline;}
+form{display:inline;}
+
+.table{margin:10px;border:1px solid #8FB9D0;background:#FFF;padding:0;}
+.list_style{width:100%;background:#DAF6F6;}
+.list_style td{padding:4px;}
+.list_style .theader{font-weight:bold;padding:6px;background:#8CD6F0 url("../images/bg_table.gif") repeat-x;}
+.list_style .tcat{color:#659B28;background:#D4EFF7;}
+.list_style .tfoot{padding:2px;background:#D4EFF7;}
+.list_style .alt1{background:#FAFCFF;}
+.list_style .alt2{background:#F5FCFF;}
+.list_style p{margin:4px;}
+
+.list_data{color:#AAA;}
+.list_commend{color:#900;}
+
+.highlight{background:#46BEE4;color:#FFF;}
+.highlight a{color:#FFF;}
+
+.f_nav{padding:4px 2px 4px 6px;background:#E2F1FD;}
+
+.tip{color:#E60000;border:1px solid #E7E7CB;line-height:160%;background:#FFFFF6;padding:6px;margin:10px;}
+.tip ul{margin:0;padding:0;}
+.tip ul li{margin:0;border-bottom:1px solid #E7E7CB;padding:3px 0;line-height:20px;list-style:none;}
+.form_clue{margin-top:2px;padding:8px 10px 3px 20px;color:#888;background:url("../images/tip.gif") no-repeat;}
+
+.formInput{color:#444;border:1px solid #46BEE4;background:#FFF;height:18px;margin:2px 2px 2px 0;}
+.formTextarea{color:#444;border:1px solid #46BEE4;background:#FFF;padding:4px;margin:2px 2px 2px 0;}
+.formButton{color:#FFF;background:#46BEE4;border:3px double #46BEE4;height:22px;}
+.formInput:hover,.formTextarea:hover{border:1px solid #87A93E;background:#CEEA91;color:#000}
+
+.text_normal{font-weight:normal;}
+.text_bold{font-weight:bold;}
+.text_center{text-align:center;}
+.text_left{text-align:left;}
+.text_right{text-align:right;}
+.text_nowrap{white-space:nowrap;}
+.text_red{color:red;}
+.text_white{color:white;}
+.text_green{color:green;}
+.text_14{font-size:14px;}
+.text_12{font-size:12px;}
+
+.multipage a{color:#014B88;}
+.multipage a:hover{color:#014B88;}
+.multipage span{margin:0 6px 0 0;}
+.multipage .active{color:#F00;font-weight:bold;}
+
+.sort_list li{font-size:16px;line-height:160%;font-weight:bold;}
+
+.fieldset{padding:4px;border:1px solid #C1F0F0;margin-bottom:4px;}
+
+.comment hr{border:1px dashed #A8DFF0;height:1px;}
+.comment .quote{border:1px solid #CCC;padding:4px;margin:4px;}
+.comment .comment{line-height:20px;margin-bottom:10px;color:#666;word-wrap:break-word;overflow:hidden;}
+.comment .userinfo{background:#E1EFEF;margin-bottom:6px;line-height:25px;}
+
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+
+/* frame top */
+.pagetitle{min-width:800px;}
+.pagetitle{color:#FFF;border-top:1px solid #8FB9D0;background:#E2F2FF url("../images/nav_bg.gif") repeat-x;height:1%;padding-left:170px;}
+.top_nav{border-right:1px solid #FFF;}
+.top_nav a{color:#444;}
+.top_nav a:link, .top_nav a:visited, .top_nav a:active, .top_nav a:hover
+{float:left;display:block;padding:7px 15px;text-decoration:none;border-left:1px solid #E6F3F9;border-right:1px solid #8FB9D0;}
+.top_tool{padding:5px 20px 0 8px;}
+
+.topbody{background:#E6F3F9;padding:2px;height:31px;}
+.topbody .nav{padding-top:4px;}
+.topbody a:link, .topbody a:visited, .topbody a:active, .topbody a:hover{float:left;display:block;padding:4px 6px;margin-right:5px;text-decoration:none;}
+.topbody a:hover{color:#FFF;background:#6BBFE0;}
+
+/* frame left */
+.nav{background:#E6F3F9;}
+.navlayout{margin:6px 4px 4px 4px;width:150px;}
+.navtitle{color:#014B88;font-weight:bold;padding:4px 4px 4px 20px;background:#8CD6F0 url("../images/057.gif") no-repeat 0 33%;border:1px solid #8FB9D0;margin-top:3px;height:16px;}
+.navtitle span{float:left;}
+.navtitle a{float:right;}
+.navgroup{border:1px solid #8FB9D0;border-top:0;margin-bottom:6px;}
+.navlink-normal{padding:5px 5px 3px 10px;border-bottom:1px dotted #C4E3FD;background:#F5FCFF;}
+.navlink-hover{background:#CEEA91;border-top:1px solid #87A93E;border-bottom:1px solid #87A93E;padding:4px 9px 3px 10px;}
+
+.copyright {margin:20px 0 0 0;text-align:center;float:center;clear:both;}

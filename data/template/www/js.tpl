@@ -1,0 +1,3 @@
+<!--{foreach item=row from=$BtData key=key}-->
+document.write('<!--{if $JSConfig.sname}-->[<a href="<!--{$Config.site_path}-->/<!--{$row.sort_url}-->" target="_blank"><!--{$row.sort_name|escape:"javascript"}--></a>]<!--{/if}--><a href="<!--{$Config.site_path}-->/<!--{$row.bt_url}-->" target="_blank"><!--{$row.bt_data_title|escape:"javascript"}--></a><!--{if $JSConfig.postdate}--><font color="#555555">(<!--{$row.release_date|date_format:"%Y-%m-%d %H:%M"}-->)</font><!--{/if}--><!--{if $JSConfig.xbt}--><font color="#555555">(种子:<!--{$row.seeders}-->,下载:<!--{$row.leechers}-->,完成<!--{$row.completed}-->)</font><!--{/if}--><br />');
+<!--{/foreach}-->

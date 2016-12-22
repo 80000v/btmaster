@@ -1,0 +1,32 @@
+主目录 添加映射
+.iirf -> IIRF.DLL  动作限制为OPTIONS,GET,POST,PUT 勾选脚本引擎
+
+IIRF Proxy Extension WEB扩展 -> IIRF.DLL
+
+添加ISAPI筛选器
+
+所有相关文件都要有IIS_WPG权限，包括各站点的配置文件
+
+=========================================
+RewriteLog <filename stub>  保存的日志路径，如 c:\temp\iirfLog.out
+RewriteLogLevel {0,1,2,3,4,5} 日志的等级,默认值为0
+0–不会记录日志
+1 - 少许的日志
+2 - 比较多的日志
+3 - 比较详细的日志
+4 - 详细的日志（4），并会跟踪server variable和替换的字符串。
+5 - 详细的日志（5），包括日志文件更改的事件，建议方便调试的时候使用
+
+=========================================
+格式：
+RewriteRule <url-pattern> <replacement-string> [<modifiers>]
+
+
+全局配置文件(IirfGlobal.ini) 与DLL文件放同一目录
+站点配置文件(Iirf.ini) 放在各站点的根目录
+
+=========================================
+查看iirf状态
+StatusUrl iirfStatus
+StatusInquiry ON
+http://localhost/iirfstatus

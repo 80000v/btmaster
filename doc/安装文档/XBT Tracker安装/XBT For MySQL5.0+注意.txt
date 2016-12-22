@@ -1,0 +1,6 @@
+编辑my.ini(Linux修改my.conf)
+修改sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+为sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+如果没有这段，直接添加在[mysqld]下面
+不然会出现种子等统计信息无法更新的问题
+保存修改后重启mysql
